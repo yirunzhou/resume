@@ -1,0 +1,151 @@
+\documentclass[]{mcdowellcv}
+
+
+\usepackage{geometry} % Document margins
+% For mathematical symbols
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+
+ \geometry{
+ left = 10mm,
+ right = 10mm,
+ top = 15mm,
+ bottom = 7mm
+ }
+% Set applicant's personal data for header
+\name{Yirun Zhou}
+\webpage{}
+\contacts{781-775-4482 \linebreak yirunzhou@brandeis.edu}
+\github{}
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+	
+	% Print the content
+\begin{cvsection}{Education}
+		\begin{cvsubsection}{Brandeis University}{Waltham, MA}{May 2020}
+			\begin{itemize}
+				\item \textbf{M.S. in Computer Science}, GPA: 3.7
+			\end{itemize}
+		\end{cvsubsection}
+		% \begin{cvsubsection}{Zhejiang University of Technology}{Zhejiang, China}{May 2018}
+		% 	\begin{itemize}
+		% 		\item \textbf{B.S. in Analytical Chemistry} {, GPA: 3.7}
+		% 	\end{itemize}
+		% \end{cvsubsection}
+	\end{cvsection}
+ 
+\begin{cvsection}{Employment}
+            \begin{cvsubsection}{Software Engineer, Billing}{Yelp, San Francisco}{Aug 2024 – Now}
+                \begin{itemize}
+                    \item Integrated \textbf{Avalara} tax engine into Yelp's in-house billing system from design to implementation; automated taxing on over \textbf{8M} ledger lines by far, and removed manual tax calculation effort
+                    \item Accelerated daily billing pipeline runtime by \textbf{~2 hours} by skipping unnecessary usage data fetches via conditional execution logic
+                    \item Built an end-to-end subscription validation framework across purchasing, taxation, and reporting flows that significantly accelerated development iteration speed
+                \end{itemize}
+		\end{cvsubsection}
+
+            \begin{cvsubsection}{Software Engineer, Reporting}{Yelp, San Francisco}{Jan 2023 – July 2024}
+                \begin{itemize}
+                    \item Delivered a daily revenue recognition platform in \textbf{Python + Spark} integrated with \textbf{Zuora RevPro} with correctly handling multi-period revenue schedules and various contract setup, enabling finance to close the books \textbf{50\%} faster and providing leadership real-time revenue visibility.
+
+                \end{itemize}
+		\end{cvsubsection}
+
+            \begin{cvsubsection}{Software Engineer, Commerce Core}{Yelp, San Francisco}{Jan 2021 – Dec 2022}
+			\begin{itemize}
+            \item Scoped and implemented modernization of our in-house billing system, and monitored pilot accounts by \textbf{Splunk}
+            \item Rolled out standardiezed invoicing to additional \textbf{23\%} of payment accounts, targeting a \textbf{3\%} collections lift
+            \item Parallelized the daily integrity checker in \textbf{Spark}, reducing runtime from \textbf{24h → 1h} and enabling daily billing anomaly detection
+            \item Prototyped \textbf{Zuora billing} flows and benchmarked them against Yelp’s in-house billing platform to evaluate flexibility, validate performance and data parity.
+
+            \end{itemize}
+		\end{cvsubsection}
+
+            \begin{cvsubsection}{Software Engineer, Purchasing}{Yelp, San Francisco}{Aug 2020 – Jan 2021}
+                    \begin{itemize}
+                        \item Enabled pause/resume subscription controls and budget editing, unlocking re-purchases for \textbf{1M+} campaigns during temporary business shutdowns since covid.
+                    \end{itemize}
+            \end{cvsubsection}
+            
+            \begin{cvsubsection}{Software Engineering Intern, Ads}{Yelp, San Francisco}{June 2019 – Aug 2019}
+                    \begin{itemize}
+                        \item Built cookie-sync system for ads syndication in \textbf{Python} backed by \textbf{Cassandra} and \textbf{Splunk} telemetry, and generated \textbf{~\$12M} revenue in 2020 with \textbf{~\$30M+} projected for 2021
+                        \item Developed isolated end-to-end test flow and encrypted cross-network sync calls to prevent data contamination and spam attacks
+
+           % \item Implemented cookie synchronization system for ads syndication with \textbf{Python}, stored targeting info in \textbf{Cassandra}, monitored users traffic by \textbf{Splunk}; generated \textbf{\$12M} in 2020, with projection of \textbf{\$30M+} in 2021
+           % \item Designed end-to-end testing flow to test cookie synchronization system on development environment, avoiding data contamination in production
+           % \item Encrypted cookie synchronization calls to prevent spamming attacks
+           % \item Updated admin sites with ads' syndication analytical data, optimized corresponding service code
+            \end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+
+
+    
+    
+	\begin{cvsection}{Project Experience}
+	
+% 	    \begin{cvsubsection}{}{}{}
+%         \textbf{Nano-Twitter Web Service}
+%         \begin{itemize}
+% \item Implemented a twitter clone with \textbf{Ruby}, \textbf{React} and \textbf{Postgres} with Service Oriented Architecture(\textbf{SOA})
+% \item Developed a RESTful backend with Ruby and Postgres, used \textbf{RabbitMQ} for inter-service communication, \textbf{Sidekiq} for background jobs
+% \item Implemented a fan-out architecture for handling new tweets and timeline retrieving, cached users' timeline with \textbf{Redis}, improved average response time by \textbf{35\%} in load testing
+% \item Automated system deployment with \textbf{CodePipline} to \textbf{Elastic Beanstalk} with \textbf{Docker}, enabled auto-scaling based on load, and used AWS classic load balancer
+% \item Did load testing with \textbf{300} clients per second to simulate user behaviors(reading timeline, posting new tweets) for debugging and optimizing our architecture, tested by \textbf{loader.io}
+%             \end{itemize}
+% 		\end{cvsubsection}
+        
+    
+        \begin{cvsubsection}{}{}{}
+        \textbf{Tab Stack Chrome Browser Plugin}
+        \begin{itemize}
+\item Developed an interactive \textbf{Javascript} based Chrome plugin to manage tabs, imitated task management of \textbf{Mac application switcher}
+\item Designed tab storage algorithms to store browser tabs' info list in background script according to the sequence they activated
+\item Displays tabs' info on pop up page, put more recently activated tabs on the top
+\item Published in \textbf{Chrome Web Store} with instructive documentations
+            \end{itemize}
+           \end{cvsubsection} 
+
+        \begin{cvsubsection}{}{}{}
+        \textbf{Grandmother's Mansion Escape Room Game}
+        \begin{itemize}
+\item Led the implementation of the entire game with \textbf{Unity} engine in \textbf{C\#}
+\item Designed an event dispatch system to decouple event triggers and the actual component controller(like audio controller) to allow a player action triggers multiple side effects gracefully
+\item Designed an inventory system that allows collecting and using game items
+\item Developed a customized dialogue system reusing a third party dialogue solution(fluid-dialogue) to interact with existing gaming logic
+            \end{itemize}
+           \end{cvsubsection} 
+	\end{cvsection}
+	
+    
+    
+\begin{cvsection}{Languages and Technologies}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item \textbf{Languages:} Python, C\#, Java, Ruby, JavaScript, SQL, CQL
+				\item \textbf{Framework / Tools:} Pyramid, Spark, Node.js, Redis, RabbitMQ, AWS, Git, Splunk
+                \item \textbf{Database :} Postgres, MySQL, Cassandra, MongoDB, Redis
+                \item \textbf{Operating Systems :} Linux, MacOS, Windows
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+    
+    
+	%\begin{cvsection}{Additional Experience and Awards}
+	%	\begin{cvsubsection}{}{}{}	
+	%		\begin{itemize}
+	%			\item \textbf{IBM DB2 Academic Associate} Certification
+	%			\item Conducted a 3-day workshop on IBM DB2 with 73 participants (Oct 2013) at Assam Engineering College
+	%			\item Worked as a Programming lab assistant at Assam Engineering College, Guwahati (Aug 2013 - Oct 2013)
+	%		\end{itemize}
+	%	\end{cvsubsection}
+	%\end{cvsection}
+	
+	
+\end{document}
